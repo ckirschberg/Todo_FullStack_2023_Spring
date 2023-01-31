@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos}/>
        
       <TodoInput setTodos={setTodos}/>
 
