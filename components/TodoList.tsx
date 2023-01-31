@@ -5,7 +5,7 @@ import Todo from './Todo';
 
 interface Props {
   todos: TodoEntity[],
-  setTodos: () => void
+  setTodos: (todos: any) => void
 }
 
 const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
