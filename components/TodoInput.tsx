@@ -7,7 +7,7 @@ interface Props {
 }
 
 const TodoInput: React.FC<Props> = (props) => {
-    const [text, onChangeText] = useState('')
+    const [text, setText] = useState('')
  
     const addTodo = () => {
         const todo = new TodoEntity(Math.random(), text);
@@ -17,7 +17,7 @@ const TodoInput: React.FC<Props> = (props) => {
     <SafeAreaView>
     <TextInput
       style={styles.input}
-      onChangeText={onChangeText}
+      onChangeText={setText}
       value={text}
     />
     <Button title="Add" onPress={addTodo} />

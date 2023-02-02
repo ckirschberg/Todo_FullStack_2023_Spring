@@ -10,7 +10,7 @@ interface Props {
 
 const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
   return (
-    <SafeAreaView >
+    <SafeAreaView>
       <FlatList
         data={todos}
         renderItem={({item}) => <Todo todoEntity={item} setTodos={setTodos}/>}
